@@ -1,0 +1,23 @@
+//
+//  medical-Prefix.pch
+//  medical
+//
+//  Created by renmiantaohua on 16/12/6.
+//  Copyright © 2016年 zhide. All rights reserved.
+//
+
+#ifndef medical_Prefix_pch
+#define medical_Prefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - margin
+#define Height [[UIScreen mainScreen]bounds].size.height
+#define Width  [[UIScreen mainScreen]bounds].size.width
+
+#pragma mark - Color
+#define UKDColor(r, g, b)       [UIColor colorWithRed:r/255.00 green:g/255.00 blue:b/255.00 alpha:1]
+#define TextColor              UKDColor(0x55, 0x55, 0x55)  //字体灰色
+
+#endif /* medical_Prefix_pch */

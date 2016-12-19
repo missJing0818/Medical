@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hospital Details View Controller-->
+        <scene sceneID="vZo-Id-drK">
+            <objects>
+                <viewController storyboardIdentifier="HospitalDetailsViewController" id="3sY-Ec-4lQ" customClass="HospitalDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YL9-Wx-Ovu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zve-9x-zCx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8Jb-nB-Ena">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p27-UG-tZU">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HospitalNameCell" rowHeight="45" id="OcF-1n-QWX" customClass="HospitalNameCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OcF-1n-QWX" id="4p4-ds-bTR">
+                                            <frame key="frameInset" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="医院名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCz-FQ-ZUu">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="等级" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1J-YU-cQk">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="r1J-YU-cQk" firstAttribute="centerY" secondItem="MCz-FQ-ZUu" secondAttribute="centerY" id="0Bo-FG-vZh"/>
+                                                <constraint firstAttribute="trailing" secondItem="r1J-YU-cQk" secondAttribute="trailing" constant="8" id="JN0-Zy-eGa"/>
+                                                <constraint firstItem="MCz-FQ-ZUu" firstAttribute="leading" secondItem="4p4-ds-bTR" secondAttribute="leading" constant="8" id="kR7-hp-3Ma"/>
+                                                <constraint firstItem="MCz-FQ-ZUu" firstAttribute="centerY" secondItem="4p4-ds-bTR" secondAttribute="centerY" id="msM-Bz-ahu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hospitalClass" destination="r1J-YU-cQk" id="3SI-k3-HGD"/>
+                                            <outlet property="hospitalName" destination="MCz-FQ-ZUu" id="jB4-jt-Qkg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3sY-Ec-4lQ" id="TzU-tX-cCC"/>
+                                    <outlet property="delegate" destination="3sY-Ec-4lQ" id="QOD-v2-Yig"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p27-UG-tZU" firstAttribute="leading" secondItem="8Jb-nB-Ena" secondAttribute="leading" id="7S7-9C-BhV"/>
+                            <constraint firstItem="Zve-9x-zCx" firstAttribute="top" secondItem="p27-UG-tZU" secondAttribute="bottom" id="C0Q-X4-Fk2"/>
+                            <constraint firstAttribute="trailing" secondItem="p27-UG-tZU" secondAttribute="trailing" id="Dzk-ru-gzr"/>
+                            <constraint firstItem="p27-UG-tZU" firstAttribute="top" secondItem="YL9-Wx-Ovu" secondAttribute="bottom" id="U46-ee-xyd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="p27-UG-tZU" id="h7B-md-jto"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Mw-Ph-i3F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="-358"/>
+        </scene>
+    </scenes>
+</document>

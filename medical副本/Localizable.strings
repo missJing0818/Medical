@@ -1,0 +1,32 @@
+/* 
+  Localizable.strings
+  unionkd
+
+  Created by Young on 16/5/16.
+  Copyright © 2016年 vprisk. All rights reserved.
+*/
+
+//登录
+"Login_AgreementText" = "登录视为同意";
+"Login_AgreementButton" = "用户协议";
+"Login_LoginButton" = "登录";
+"Login_GetSmsCodeButton" = "获取验证码";
+"Login_VPRISK" = "VPRISK";
+"Login_Logining" = "正在登陆";
+
+//首页
+"Home_SearchText" = "症状自诊、搜医生、疾病、药品";
+"Home_HealthAssistant" = "健康助手";
+
+//搜索
+"Search_Cancel" = "取消";
+"Search_Doctor" = "搜症状、医院、科室、医生姓名";
+"Search_Back" = "返回";
+
+//提问
+"Question_Placeholder" = "请详细描述您的症状、疾病和身体状况，我们会为您自动分诊到科室并保证您的隐私";
+
+//医院
+"Hospital_Register" = "挂号";
+"Hospital_Doctor" = "医生";
+"Hospital_More" = "更多";

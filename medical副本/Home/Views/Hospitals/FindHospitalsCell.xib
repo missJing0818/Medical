@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="195" id="KGk-i7-Jjw" customClass="FindHospitalsCell">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="480" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Br-sw-Kz3">
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z2T-JP-gpT">
+                                <color key="backgroundColor" red="0.0" green="0.5450980392" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Qft-6i-xTt"/>
+                                </constraints>
+                            </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uE8-VJ-Z1O">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="聊城市人民医院" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdN-4J-7Eo">
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="三级甲等" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndX-Zm-a2s">
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="KdN-4J-7Eo" firstAttribute="top" secondItem="uE8-VJ-Z1O" secondAttribute="top" constant="3" id="Hoa-gd-K46"/>
+                                    <constraint firstAttribute="height" constant="45" id="el3-vN-1Zn"/>
+                                    <constraint firstItem="KdN-4J-7Eo" firstAttribute="leading" secondItem="uE8-VJ-Z1O" secondAttribute="leading" constant="5" id="kX1-Kj-aCj"/>
+                                    <constraint firstItem="ndX-Zm-a2s" firstAttribute="leading" secondItem="KdN-4J-7Eo" secondAttribute="leading" id="qZh-mq-6LN"/>
+                                    <constraint firstItem="ndX-Zm-a2s" firstAttribute="top" secondItem="KdN-4J-7Eo" secondAttribute="bottom" constant="2" id="uKT-O7-Rrr"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrw-9b-ZkM">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Gik-5U-IsS"/>
+                                </constraints>
+                                <string key="text">聊城市人民医院始建于1947年，是一所集医疗、教学、科研、康复、保健于一体的三级甲等医院。中医儿科、中医肛肠科、肝胆外科、口腔颌面外科整形专业、口腔修复正畸专业、病理科、心内科、儿科等。聊城市人民医院有职工4600余人，其中高级专业技术人员600余人，博士、硕士1400余人。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vpK-2W-nrw">
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.75294117650000003" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="15" id="FUR-CG-Y1u"/>
+                                    <constraint firstAttribute="height" constant="15" id="HQL-A4-1Nk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="山东聊城市东昌路67号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4N-Sb-BoO">
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vpK-2W-nrw" firstAttribute="top" secondItem="zrw-9b-ZkM" secondAttribute="bottom" constant="4" id="0hI-fX-nrQ"/>
+                            <constraint firstItem="vpK-2W-nrw" firstAttribute="leading" secondItem="6Br-sw-Kz3" secondAttribute="leading" constant="8" id="1Qy-hm-j3y"/>
+                            <constraint firstAttribute="trailing" secondItem="uE8-VJ-Z1O" secondAttribute="trailing" id="1RC-Eu-HQh"/>
+                            <constraint firstItem="z4N-Sb-BoO" firstAttribute="centerY" secondItem="vpK-2W-nrw" secondAttribute="centerY" id="32f-FE-WW8"/>
+                            <constraint firstItem="uE8-VJ-Z1O" firstAttribute="leading" secondItem="6Br-sw-Kz3" secondAttribute="leading" id="8JX-LN-up1"/>
+                            <constraint firstItem="zrw-9b-ZkM" firstAttribute="leading" secondItem="6Br-sw-Kz3" secondAttribute="leading" constant="8" id="HzD-s8-c71"/>
+                            <constraint firstItem="Z2T-JP-gpT" firstAttribute="leading" secondItem="6Br-sw-Kz3" secondAttribute="leading" id="JSY-Ye-cxP"/>
+                            <constraint firstItem="Z2T-JP-gpT" firstAttribute="top" secondItem="6Br-sw-Kz3" secondAttribute="top" id="OPI-nL-22e"/>
+                            <constraint firstAttribute="trailing" secondItem="Z2T-JP-gpT" secondAttribute="trailing" id="P0d-zM-mAh"/>
+                            <constraint firstItem="zrw-9b-ZkM" firstAttribute="top" secondItem="uE8-VJ-Z1O" secondAttribute="bottom" constant="8" id="XgX-CI-TjT"/>
+                            <constraint firstItem="uE8-VJ-Z1O" firstAttribute="bottom" secondItem="Z2T-JP-gpT" secondAttribute="bottom" id="bOz-NF-wCy"/>
+                            <constraint firstAttribute="trailing" secondItem="zrw-9b-ZkM" secondAttribute="trailing" constant="8" id="xdj-45-kOD"/>
+                            <constraint firstItem="z4N-Sb-BoO" firstAttribute="leading" secondItem="vpK-2W-nrw" secondAttribute="trailing" constant="2" id="zqq-5p-Xju"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="6Br-sw-Kz3" secondAttribute="trailing" constant="10" id="Ekn-SQ-bF3"/>
+                    <constraint firstAttribute="bottom" secondItem="6Br-sw-Kz3" secondAttribute="bottom" constant="5" id="TQg-cc-87Z"/>
+                    <constraint firstItem="6Br-sw-Kz3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="oRh-W9-E4P"/>
+                    <constraint firstItem="6Br-sw-Kz3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="qw7-8V-X9w"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-104" y="54.5"/>
+        </tableViewCell>
+    </objects>
+</document>

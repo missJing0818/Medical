@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="a8T-gB-Ye4" customClass="MyHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="179"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon_default" translatesAutoresizingMaskIntoConstraints="NO" id="k3w-eh-OJj">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5Mg-IO-1PL"/>
+                        <constraint firstAttribute="width" constant="50" id="SMA-5d-oo9"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell" highlightedImage="bell.png" translatesAutoresizingMaskIntoConstraints="NO" id="wXl-g4-EIi">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="34Z-j3-QJQ"/>
+                        <constraint firstAttribute="height" constant="20" id="m8T-j7-bfu"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QQy-q3-IXD">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="R1J-OI-fK7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="账户余额">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="balanceClicked:" destination="a8T-gB-Ye4" eventType="touchUpInside" id="GaE-HA-0v3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-Cs-FKW">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="登录／注册" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkO-Aa-c9x">
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7G2-n5-dKf">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="T66-Yf-zaq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="优惠券">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="couponClicked:" destination="a8T-gB-Ye4" eventType="touchUpInside" id="x9Q-lR-il2"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cc-Ca-4Ye">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4c-lu-7Me">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="7WE-Vt-ZWg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <state key="normal" title="金币">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="goldCoinsClicked:" destination="a8T-gB-Ye4" eventType="touchUpInside" id="0o4-Sb-8yd"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLz-It-YJB">
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kcg-po-dDX">
+                    <connections>
+                        <action selector="userInfoClicked:" destination="a8T-gB-Ye4" eventType="touchUpInside" id="gAP-AD-p7o"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.61356963090000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="QQy-q3-IXD" firstAttribute="leading" secondItem="a8T-gB-Ye4" secondAttribute="leading" id="4sZ-Wh-4qf"/>
+                <constraint firstItem="wXl-g4-EIi" firstAttribute="top" secondItem="a8T-gB-Ye4" secondAttribute="top" constant="20" id="5gq-ZH-j4F"/>
+                <constraint firstAttribute="bottom" secondItem="QQy-q3-IXD" secondAttribute="bottom" constant="10" id="9Mi-Tr-csq"/>
+                <constraint firstItem="K4c-lu-7Me" firstAttribute="width" secondItem="QQy-q3-IXD" secondAttribute="width" id="B7a-Kx-edw"/>
+                <constraint firstItem="K4c-lu-7Me" firstAttribute="top" secondItem="nLz-It-YJB" secondAttribute="bottom" constant="-28" id="EkS-pb-giM"/>
+                <constraint firstAttribute="bottom" secondItem="K4c-lu-7Me" secondAttribute="bottom" constant="10" id="GaR-OJ-Cu0"/>
+                <constraint firstItem="Kcg-po-dDX" firstAttribute="top" secondItem="a8T-gB-Ye4" secondAttribute="top" constant="60" id="IBb-wP-K0l"/>
+                <constraint firstItem="7G2-n5-dKf" firstAttribute="leading" secondItem="QQy-q3-IXD" secondAttribute="trailing" id="K3g-qz-iAB"/>
+                <constraint firstItem="Kcg-po-dDX" firstAttribute="leading" secondItem="a8T-gB-Ye4" secondAttribute="leading" id="Mzo-8g-IPF"/>
+                <constraint firstItem="QQy-q3-IXD" firstAttribute="top" secondItem="oYd-Cs-FKW" secondAttribute="bottom" constant="-28" id="Nwj-r2-L3O"/>
+                <constraint firstItem="fkO-Aa-c9x" firstAttribute="leading" secondItem="k3w-eh-OJj" secondAttribute="trailing" constant="8" id="OZE-Gc-K3c"/>
+                <constraint firstItem="Kcg-po-dDX" firstAttribute="centerY" secondItem="k3w-eh-OJj" secondAttribute="centerY" id="PZa-ap-GkO"/>
+                <constraint firstItem="wXl-g4-EIi" firstAttribute="leading" secondItem="Kcg-po-dDX" secondAttribute="trailing" constant="100" id="RRx-kH-xMq"/>
+                <constraint firstAttribute="bottom" secondItem="7G2-n5-dKf" secondAttribute="bottom" constant="10" id="Tuv-Pk-tAu"/>
+                <constraint firstItem="k3w-eh-OJj" firstAttribute="leading" secondItem="a8T-gB-Ye4" secondAttribute="leading" constant="15" id="Xbs-dn-8OG"/>
+                <constraint firstItem="0cc-Ca-4Ye" firstAttribute="centerX" secondItem="7G2-n5-dKf" secondAttribute="centerX" id="ZjA-X3-3zJ"/>
+                <constraint firstItem="K4c-lu-7Me" firstAttribute="leading" secondItem="7G2-n5-dKf" secondAttribute="trailing" id="aCo-tK-9PW"/>
+                <constraint firstItem="oYd-Cs-FKW" firstAttribute="centerX" secondItem="QQy-q3-IXD" secondAttribute="centerX" id="d1n-5g-Qrc"/>
+                <constraint firstAttribute="trailing" secondItem="wXl-g4-EIi" secondAttribute="trailing" constant="10" id="h67-tO-h3D"/>
+                <constraint firstItem="7G2-n5-dKf" firstAttribute="width" secondItem="QQy-q3-IXD" secondAttribute="width" id="ne4-Jh-lWh"/>
+                <constraint firstAttribute="trailing" secondItem="K4c-lu-7Me" secondAttribute="trailing" id="pqB-EQ-GAo"/>
+                <constraint firstItem="fkO-Aa-c9x" firstAttribute="centerY" secondItem="k3w-eh-OJj" secondAttribute="centerY" id="rEK-MA-0to"/>
+                <constraint firstItem="7G2-n5-dKf" firstAttribute="top" secondItem="0cc-Ca-4Ye" secondAttribute="bottom" constant="-28" id="tNY-al-9PT"/>
+                <constraint firstItem="k3w-eh-OJj" firstAttribute="top" secondItem="a8T-gB-Ye4" secondAttribute="top" constant="60" id="uG7-Au-cuf"/>
+                <constraint firstItem="nLz-It-YJB" firstAttribute="centerX" secondItem="K4c-lu-7Me" secondAttribute="centerX" id="zdp-b3-1QK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="balance" destination="oYd-Cs-FKW" id="iOm-Uh-3xp"/>
+                <outlet property="coupon" destination="0cc-Ca-4Ye" id="SJk-TW-4J7"/>
+                <outlet property="goldCoins" destination="nLz-It-YJB" id="HuC-Yz-Pc9"/>
+                <outlet property="headerImg" destination="k3w-eh-OJj" id="Ydk-JB-qyL"/>
+                <outlet property="userName" destination="fkO-Aa-c9x" id="QVZ-Jr-Dhb"/>
+            </connections>
+            <point key="canvasLocation" x="176" y="-75.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bell" width="64" height="64"/>
+        <image name="bell.png" width="200" height="200"/>
+        <image name="user_icon_default" width="200" height="200"/>
+    </resources>
+</document>

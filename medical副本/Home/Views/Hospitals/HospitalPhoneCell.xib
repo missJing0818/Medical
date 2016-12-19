@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="45" id="Ygl-W9-3eT" customClass="HospitalPhoneCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ygl-W9-3eT" id="93K-wK-VA6">
+                <frame key="frameInset" width="375" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMN-Me-1Kt">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ScD-Vl-UF1">
+                        <color key="backgroundColor" red="0.0" green="0.61356963090000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="H2i-ql-iuH"/>
+                            <constraint firstAttribute="height" constant="15" id="snA-nE-Qox"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CFd-ff-h4S">
+                        <color key="backgroundColor" red="0.0" green="0.61356963090000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="6Le-ov-ajC"/>
+                            <constraint firstAttribute="height" constant="30" id="6ft-hB-Oe3"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="CFd-ff-h4S" secondAttribute="trailing" constant="8" id="1zc-GS-9K5"/>
+                    <constraint firstItem="CFd-ff-h4S" firstAttribute="centerY" secondItem="QMN-Me-1Kt" secondAttribute="centerY" id="6Kj-SO-YxG"/>
+                    <constraint firstItem="ScD-Vl-UF1" firstAttribute="leading" secondItem="93K-wK-VA6" secondAttribute="leading" constant="8" id="NNg-BU-4My"/>
+                    <constraint firstItem="QMN-Me-1Kt" firstAttribute="centerY" secondItem="ScD-Vl-UF1" secondAttribute="centerY" id="eum-gh-gc7"/>
+                    <constraint firstItem="ScD-Vl-UF1" firstAttribute="centerY" secondItem="93K-wK-VA6" secondAttribute="centerY" id="qFs-Cq-m3k"/>
+                    <constraint firstItem="QMN-Me-1Kt" firstAttribute="leading" secondItem="ScD-Vl-UF1" secondAttribute="trailing" constant="10" id="sOl-uN-UCH"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+</document>
